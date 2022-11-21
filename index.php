@@ -28,7 +28,7 @@ $query = mysqli_query($conn, "SELECT * FROM students");
     <td><?php echo $data['name']; ?></td>
     <td><?php echo $data['address']; ?></td>
     <td><a class="button" style="background-color: #4CAF50" href="pages/students/edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
-    <td><a class="button" style="background-color: #F44336" href="funcs/delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
+    <td><a class="button" style="background-color: #F44336" href="funcs/students/delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
   </tr>
   <?php } ?>
 </table>

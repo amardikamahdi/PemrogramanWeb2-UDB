@@ -11,7 +11,7 @@
     <?php include('../../components/navbar.php') ?>
 <h1 style="text-align: center">Tambah Siswa</h1>
 <div>
-  <form action="../../funcs/add.php" method="POST">
+  <form action="../../funcs/students/add.php" method="POST">
     <label for="fname">Nama Lengkap : </label>
     <input type="text" id="fname" name="name" placeholder="Masukkan nama">
 
