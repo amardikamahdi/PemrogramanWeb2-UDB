@@ -26,11 +26,11 @@ Repository ini saya gunakan sebagai wadah untuk kode saya pada Mata Kuliah Pemro
     - [x] Read - commit [a986810][commitStudentCRUD]
     - [x] Update - commit [a986810][commitStudentCRUD]
     - [x] Delete - commit [a986810][commitStudentCRUD]
-* [ ] Kelola Data Kelas
-    - [ ] Create - Belum dimulai
-    - [ ] Read - Belum dimulai
-    - [ ] Update - Belum dimulai
-    - [ ] Delete - Belum Dimulai
+* [x] Kelola Data Kelas
+    - [x] Create - Belum dimulai
+    - [x] Read - Belum dimulai
+    - [x] Update - Belum dimulai
+    - [x] Delete - Belum Dimulai
 * [ ] Kelola Data Siswa dengan Kelas
     - [ ] Create - Belum dimulai
     - [ ] Read - Belum dimulai
