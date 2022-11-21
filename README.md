@@ -55,6 +55,9 @@ Repository ini saya gunakan sebagai wadah untuk kode saya pada Mata Kuliah Pemro
 ## Kontribusi dan Permasalahan
 Silahkan berkontribusi di Repository ini dengan menggunakan fitur Pull Request yang ada. Untuk permasalahan yang terjadi dengan Repository ini, silahkan Open Issues di Repository ini.
 
+## Lisensi
+Project Open Source ini berlisensi MIT.
+
 [//]: # (Hyperlink)
 
 [commitStudentCRUD]: <https://github.com/pussy-cats/PemrogramanWeb2-UDB/commit/a986810efff307623f8bdf09699bdfa2c6133df5>
