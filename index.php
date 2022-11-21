@@ -1,6 +1,7 @@
 <?php
 include 'funcs/conn.php';
-$query = mysqli_query($conn, "SELECT * FROM students");
+$studentsQuery = mysqli_query($conn, "SELECT * FROM students LIMIT 10");
+$classesQuery = mysqli_query($conn, "SELECT * FROM classes LIMIT 10");
 ?>
 
 <!DOCTYPE html>
@@ -22,13 +23,29 @@ $query = mysqli_query($conn, "SELECT * FROM students");
     <th>Alamat</th>
     <th colspan="2">Aksi</th>
   </tr>
-  <?php while ($data = mysqli_fetch_array($query)) { ?>
+  <?php while ($data = mysqli_fetch_array($studentsQuery)) { ?>
   <tr style="text-align: center">
     <td><?php echo $data['nis']; ?></td>
     <td><?php echo $data['name']; ?></td>
     <td><?php echo $data['address']; ?></td>
     <td><a class="button" style="background-color: #4CAF50" href="pages/students/edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
     <td><a class="button" style="background-color: #F44336" href="funcs/students/delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
+  </tr>
+  <?php } ?>
+</table>
+<h1 style="text-align: center">Data Kelas</h1>
+<table id="customers">
+  <tr>
+    <th>Nama Jurusan</th>
+    <th>Kelas</th>
+    <th colspan="2">Aksi</th>
+  </tr>
+  <?php while ($data = mysqli_fetch_array($classesQuery)) { ?>
+  <tr style="text-align: center">
+    <td><?php echo $data['name']; ?></td>
+    <td><?php echo $data['grade']; ?></td>
+    <td><a class="button" style="background-color: #4CAF50" href="pages/classes/edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
+    <td><a class="button" style="background-color: #F44336" href="funcs/classes/delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
   </tr>
   <?php } ?>
 </table>
