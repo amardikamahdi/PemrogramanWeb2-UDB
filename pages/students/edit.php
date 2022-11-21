@@ -17,7 +17,7 @@ $result = mysqli_fetch_assoc($query);
 </head>
 <body>
     <?php include('../../components/navbar.php') ?>
-<h1 style="text-align: center">Tambah Siswa</h1>
+<h1 style="text-align: center">Edit Siswa - <?= $result['name'] ?></h1>
 <div>
   <form action="../../funcs/students/edit.php?id=<?= $result['id'] ?>" method="POST">
     <label for="fname">Nama Lengkap : </label>
