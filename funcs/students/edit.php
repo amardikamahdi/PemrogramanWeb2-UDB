@@ -1,6 +1,6 @@
 <?php
 
-include 'conn.php';
+include '../conn.php';
 
 $id = $_GET['id'];
 $name = $_POST['name'];
@@ -10,5 +10,5 @@ $address = $_POST['address'];
 $query = mysqli_query($conn, "UPDATE students SET name='$name', nis='$nis', address='$address' WHERE id='$id'");
 
 if ($query) {
-    header('location: ../index.php');
+    header('location: ../../index.php');
 }
