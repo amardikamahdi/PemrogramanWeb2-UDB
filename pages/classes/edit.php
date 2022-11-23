@@ -2,7 +2,7 @@
 
 include '../../funcs/conn.php';
 $id = $_GET['id'];
-$query = mysqli_query($conn, "SELECT * FROM classes WHERE id='$id'");
+$query = mysqli_query($conn, "SELECT * FROM classrooms WHERE id='$id'");
 $result = mysqli_fetch_assoc($query);
 
 ?>
@@ -21,7 +21,7 @@ $result = mysqli_fetch_assoc($query);
 <div>
   <form action="../../funcs/classes/edit.php?id=<?= $result['id'] ?>" method="POST">
   <label for="fname">Nama Jurusan : </label>
-    <input type="text" id="fname" name="name" placeholder="Masukkan nama">
+    <input type="text" id="fname" name="name" placeholder="Masukkan nama" value="<?= $result['name'] ?>">
 
     <label for="lname">Kelas : </label>
     <select name="grade">
