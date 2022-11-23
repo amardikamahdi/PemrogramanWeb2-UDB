@@ -1,7 +1,7 @@
 <?php
 include 'funcs/conn.php';
 $studentsQuery = mysqli_query($conn, "SELECT * FROM students LIMIT 10");
-$classesQuery = mysqli_query($conn, "SELECT * FROM classes LIMIT 10");
+$classesQuery = mysqli_query($conn, "SELECT * FROM classrooms LIMIT 10");
 ?>
 
 <!DOCTYPE html>
